@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Braise Tech Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #2c3e50; color: white;
+      padding: 20px; text-align: center;
+    }
+    .product {
+      border: 1px solid #ddd;
+      background: white;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .product img {
+      width: 200px; height: auto;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Braise Tech Hub</h1>
+  <p>Your one-stop shop for laptops & accessories</p>
+</header>
+
+<div class="grid">
+  <div class="product">
+    <img src="laptop.jpg" alt="Laptop" />
+    <h2>Dell XPS 13</h2>
+    <p>$1,200</p>
+    <button onclick="addToCart('Dell XPS 13')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="headphones.jpg" alt="Headphones" />
+    <h2>Wireless Headphones</h2>
+    <p>$250</p>
+    <button onclick="addToCart('Wireless Headphones')">Add to Cart</button>
+  </div>
+  <!-- Add more products here -->
+</div>
+
+<footer>
+  <p>© 2025 Braise Tech Hub. All rights reserved.</p>
+</footer>
+
+<script>
+  function addToCart(item) {
+    alert(item + " has been added to your cart!");
+  }
+</script>
+
+</body>
+</html>
